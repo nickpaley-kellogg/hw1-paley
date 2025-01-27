@@ -15,6 +15,64 @@
 -- - Everything you need to do in this assignment is marked with TODO!
 -- - Note rubric explanation for appropriate use of external resources.
 
+DELETE TABLE IF EXISTS movie;
+
+CREATE TABLE movie (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title TEXT,
+release_year INTEGER,
+rating TEXT,
+studio TEXT);
+
+INSERT INTO movie (
+    title,
+    release_year,
+    rating,
+    studio
+)
+
+VALUES (
+    "Batman Begins",
+    2005,
+    "PG-13",
+    "Warner Brothers"
+);
+
+INSERT INTO movie (
+    title,
+    release_year,
+    rating,
+    studio
+)
+
+VALUES (
+    "The Dark Knight",
+    2008,
+    "PG-13",
+    "Warner Brothers"
+);
+
+INSERT INTO movie (
+    title,
+    release_year,
+    rating,
+    studio
+)
+
+VALUES (
+    "The Dark Knight Rises",
+    2012,
+    "PG-13",
+    "Warner Brothers"
+);
+
+CREATE TABLE ensemble (
+id INTEGER PRIMARY AUTOINCREMENT,
+movie.id INTEGER,
+title TEXT,
+actor TEXT,
+role TEXT);
+
 -- User stories
 --
 -- - As a guest, I want to see a list of movies with the title, year released,
@@ -137,3 +195,4 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
