@@ -15,7 +15,8 @@
 -- - Everything you need to do in this assignment is marked with TODO!
 -- - Note rubric explanation for appropriate use of external resources.
 
-DELETE TABLE IF EXISTS movie;
+DROP TABLE IF EXISTS movie;
+DROP TABLE IF EXISTS ensemble;
 
 CREATE TABLE movie (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -67,8 +68,8 @@ VALUES (
 );
 
 CREATE TABLE ensemble (
-id INTEGER PRIMARY AUTOINCREMENT,
-movie.id INTEGER,
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+movie_id INTEGER,
 title TEXT,
 actor TEXT,
 role TEXT);
