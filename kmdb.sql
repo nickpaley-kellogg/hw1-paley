@@ -64,7 +64,7 @@ VALUES (
     "The Dark Knight Rises",
     2012,
     "PG-13",
-    "Warner Brothers"
+    "Warner Bros."
 );
 
 CREATE TABLE ensemble (
@@ -73,6 +73,34 @@ movie_id INTEGER,
 title TEXT,
 actor TEXT,
 role TEXT);
+
+INSERT INTO ensemble (
+    movie_id,
+    title,
+    actor,
+    role
+)
+
+VALUES (
+    1,
+    "Batman Begins",
+    "Christian Bale",
+    "Bruce Wayne / Batman"
+);
+
+INSERT INTO ensemble (
+    movie_id,
+    title,
+    actor,
+    role
+)
+
+VALUES (
+   1,
+   "Batman Begins",
+    "Michael Cane",
+    "Alfred"
+);
 
 -- User stories
 --
