@@ -164,7 +164,7 @@ VALUES
 -- 4. "The report" (SELECT statements) - 6 points
 -- - Write 2 `SELECT` statements to produce something similar to the
 --   sample output below - 1 for movies and 1 for cast. You will need
---   to read data from multiple tables in each `SELECT` statement.
+--   to read data from multiple tables in each `SELECT` statement. 
 --   Formatting does not matter.
 -- 5. Using external resources for help with the assignment (including colleagues, AI, internet search, etc):
 -- - Engineers look to colleagues and the internet all the time when building software.
