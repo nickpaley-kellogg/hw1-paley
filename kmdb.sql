@@ -36,7 +36,7 @@ VALUES (
     "Batman Begins",
     2005,
     "PG-13",
-    "Warner Brothers"
+    "Warner Bros."
 );
 
 INSERT INTO movie (
@@ -50,7 +50,7 @@ VALUES (
     "The Dark Knight",
     2008,
     "PG-13",
-    "Warner Brothers"
+    "Warner Bros."
 );
 
 INSERT INTO movie (
@@ -85,7 +85,7 @@ VALUES (
     1,
     "Batman Begins",
     "Christian Bale",
-    "Bruce Wayne / Batman"
+    "Bruce Wayne"
 );
 
 INSERT INTO ensemble (
@@ -102,10 +102,27 @@ VALUES (
     "Alfred"
 );
 
+INSERT INTO ensemble (movie_id, title, actor,role)
+VALUES 
+    (1, "Batman Begins", "Liam Neeson", "Ra's Al Grul"),
+    (1, "Batman Begins", "Katie Holmes", "Rachel Dawes"),
+    (1, "Batman Begins", "Gary Oldman", "Commissioner Gordon"),
+    (2, "The Dark Knight", "Christian Bale", "Bruce Wayne"),
+    (2, "The Dark Knight", "Heath Ledger", "Joker"),
+    (2, "The Dark Knight", "Aaron Eckhart","Harvey Dent"),
+    (2, "The Dark Knight", "Michael Caine", "Alfred"),
+    (2, "The Dark Knight", "Maggie Gyllenhaal", "Rachel Dawes"),
+    (3, "The Dark Knight Rises", "Christian Bale", "Bruce Wayne"),
+    (3, "The Dark Knight Rises", "Gary Oldman", "Commissioner Gordon"),
+    (3, "The Dark Knight Rises", "Tom Hardy", "Bane"),
+    (3, "The Dark Knight Rises", "Joseph Gordon-Levitt", "John Blake"),
+    (3, "The Dark Knight Rises", "Anne Hathaway", "Selina Kyle");
+    
+
 -- User stories
 --
 -- - As a guest, I want to see a list of movies with the title, year released,
---   MPAA rating, and studio information.
+--   MPAA rating, and studio information. DONE.
 -- - As a guest, I want to see the movies which a single studio has produced.
 -- - As a guest, I want to see each movie's cast including each actor's
 --   name and the name of the character they portray.
@@ -199,13 +216,16 @@ VALUES (
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
+-- DONE
 
 -- Create new tables, according to your domain model
 -- TODO!
+-- DONE
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+-- DONE
 
 -- Prints a header for the movies output
 .print "Movies"
