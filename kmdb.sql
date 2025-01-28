@@ -123,10 +123,10 @@ VALUES
 --
 -- - As a guest, I want to see a list of movies with the title, year released,
 --   MPAA rating, and studio information. DONE.
--- - As a guest, I want to see the movies which a single studio has produced.
+-- - As a guest, I want to see the movies which a single studio has produced. DONE
 -- - As a guest, I want to see each movie's cast including each actor's
---   name and the name of the character they portray.
--- - As a guest, I want to see the movies which a single actor has acted in.
+--   name and the name of the character they portray. DONE
+-- - As a guest, I want to see the movies which a single actor has acted in. DONE
 -- * Note: The "guest" user role represents the experience prior to logging-in
 --   to an app and typically does not have a corresponding database table.
 
@@ -137,8 +137,8 @@ VALUES
 -- this file and submitted via GitHub and Canvas:
 -- - A domain model, implemented via CREATE TABLE statements for each
 --   model/table. Also, include DROP TABLE IF EXISTS statements for each
---   table, so that each run of this script starts with a blank database.
--- - Insertion of "Batman" sample data into tables.
+--   table, so that each run of this script starts with a blank database. DONE
+-- - Insertion of "Batman" sample data into tables. DONE
 -- - Selection of data, so that something similar to the sample "report"
 --   below can be achieved.
 
@@ -230,18 +230,20 @@ VALUES
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
-.print ""
+SELECT * FROM movie;
 
 -- The SQL statement for the movies output
 -- TODO!
+-- DONE
 
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
 .print "========"
-.print ""
+SELECT * FROM ensemble;
 
 
 -- The SQL statement for the cast output
 -- TODO!
+-- DONE
 
